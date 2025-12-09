@@ -41,7 +41,7 @@ export function ProductInfo({ product }: ProductInfoProps) {
     <div className="space-y-6">
       {/* Category Badge */}
       <div>
-        <Badge variant="secondary">{product.category}</Badge>
+        <Badge variant="outline">{product.category}</Badge>
       </div>
 
       {/* Product Name */}
