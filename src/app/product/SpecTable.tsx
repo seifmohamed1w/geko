@@ -7,9 +7,9 @@ interface SpecTableProps {
 export function SpecTable({ product }: SpecTableProps) {
   const specs = [
     { label: "Dimensions", value: product.dimensions },
-    { label: "Material", value: product.material },
-    { label: "Weight", value: product.weight },
-    { label: "Color", value: product.color },
+    { label: "Type", value: product.type },
+    { label: "Category", value: product.category },
+    { label: "Variant", value: product.variantName },
   ].filter((spec) => spec.value);
 
   if (specs.length === 0) return null;
